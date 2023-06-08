@@ -1,0 +1,32 @@
+[build]
+  functions = "functions-build"
+[[redirects]]
+  from = "/**"
+  to = "https://api.hubapi.com/:splat"
+  status = 200
+  force = true
+  headers = { Access-Control-Allow-Origin = "*", Authorization = "Bearer api-key"}
+
+[[redirects]]
+  from = "http://www.c-combinator.com/*"
+  to = "https://carbonwave.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.c-combinator.com/*"
+  to = "https://carbonwave.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://c-combinator.com/*"
+  to = "https://carbonwave.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://c-combinator.com/*"
+  to = "https://carbonwave.com/:splat"
+  status = 301
+  force = true
